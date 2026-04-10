@@ -59,7 +59,7 @@ export default function AboutPage() {
       {/* Hero */}
       <section className="relative py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/technician-inverter.jpg" alt="Bluefin Energy team" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1521618755572-156ae0cdd74d?w=1920&q=85" alt="Solar energy team at work" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/85 to-navy" />
         </div>
 

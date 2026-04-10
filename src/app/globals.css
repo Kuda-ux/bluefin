@@ -79,6 +79,29 @@ body {
   animation: pulse-glow 2s ease-in-out infinite;
 }
 
+@keyframes slideUp {
+  from { transform: translateY(100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+@keyframes scaleIn {
+  from { transform: scale(1.15); }
+  to { transform: scale(1); }
+}
+
+.animate-hero-zoom {
+  animation: scaleIn 20s ease-out forwards;
+}
+
 .glass {
   background: rgba(15, 33, 64, 0.6);
   backdrop-filter: blur(20px);

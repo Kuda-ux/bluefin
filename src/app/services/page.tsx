@@ -85,7 +85,7 @@ export default function ServicesPage() {
       {/* Hero */}
       <section className="relative py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/rooftop-panels-town.jpg" alt="Solar installation services" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1920&q=85" alt="Solar panels close-up" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/85 to-navy" />
         </div>
 

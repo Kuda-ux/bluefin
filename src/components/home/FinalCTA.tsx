@@ -11,7 +11,7 @@ export default function FinalCTA() {
     <section ref={ref} className="relative py-24 sm:py-32 overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src="/images/panels-metal-roof-install.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+        <img src="https://images.unsplash.com/photo-1497440001374-f26997328c1b?w=1920&q=85" alt="" className="absolute inset-0 w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-r from-navy/95 via-navy/90 to-navy/95" />
       </div>
 

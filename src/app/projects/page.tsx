@@ -7,69 +7,29 @@ import Image from "next/image";
 const categories = ["All", "Home", "Business", "Farm"];
 
 const projects = [
-  {
-    title: "Modern Home Solar System",
-    location: "Masvingo",
-    category: "Home",
-    description: "5kVA hybrid system with 8 panels and lithium battery backup for a family of 6.",
-    image: "/images/rooftop-panels-city.jpg",
-  },
-  {
-    title: "Shopping Centre Power",
-    location: "Harare",
-    category: "Business",
-    description: "10kVA commercial system powering a retail complex with 16 solar panels.",
-    image: "/images/panels-blue-roof-sunset.jpg",
-  },
-  {
-    title: "Irrigation Pump System",
-    location: "Chiredzi",
-    category: "Farm",
-    description: "Solar-powered borehole pump system irrigating 20 hectares of farmland.",
-    image: "/images/ground-mount-farm.jpg",
-  },
-  {
-    title: "Backup Power Installation",
-    location: "Masvingo",
-    category: "Business",
-    description: "Complete Kodak inverter with Dyness battery backup for a commercial property.",
-    image: "/images/inverter-batteries-kodak.jpg",
-  },
-  {
-    title: "Suburban Family Home",
-    location: "Mutare",
-    category: "Home",
-    description: "3kVA starter system for essential backup — lights, TV, fridge, and charging.",
-    image: "/images/rooftop-panels-mountain.jpg",
-  },
-  {
-    title: "Water Pumping Station",
-    location: "Beitbridge",
-    category: "Farm",
-    description: "High-capacity solar pump system for livestock watering across 50 hectares.",
-    image: "/images/pump-controller.jpg",
-  },
-  {
-    title: "Office Complex",
-    location: "Gweru",
-    category: "Business",
-    description: "8kVA MUST system powering a multi-tenant office building with server room backup.",
-    image: "/images/must-inverter-wall.jpg",
-  },
-  {
-    title: "Residential Full System",
-    location: "Masvingo",
-    category: "Home",
-    description: "Full off-grid system with rooftop panels and MUST inverter for a family home.",
-    image: "/images/rooftop-panels-masvingo.jpg",
-  },
-  {
-    title: "Farm Ground Mount",
-    location: "Marondera",
-    category: "Farm",
-    description: "Ground-mounted solar array powering agricultural operations and irrigation.",
-    image: "/images/panels-metal-roof-install.jpg",
-  },
+  { title: "Rooftop Panels – Mountain View", location: "Mutare", category: "Home", description: "Solar panels on tile roof with scenic mountain backdrop.", image: "/images/rooftop-panels-mountain.jpg" },
+  { title: "Kodak & Dyness Battery System", location: "Masvingo", category: "Business", description: "Kodak hybrid inverter with dual Dyness lithium batteries.", image: "/images/inverter-batteries-kodak.jpg" },
+  { title: "Technician Commissioning", location: "Masvingo", category: "Business", description: "Bluefin technician commissioning a Kodak inverter system.", image: "/images/technician-inverter.jpg" },
+  { title: "Team Electrical Wiring", location: "Masvingo", category: "Business", description: "Installation team completing wiring for a new backup system.", image: "/images/team-wiring.jpg" },
+  { title: "Urban Rooftop Installation", location: "Masvingo", category: "Home", description: "Panoramic rooftop solar overlooking the city.", image: "/images/rooftop-panels-city.jpg" },
+  { title: "Township Rooftop Panels", location: "Masvingo", category: "Home", description: "Residential panels at optimal angle for maximum sun capture.", image: "/images/rooftop-panels-town.jpg" },
+  { title: "Inverter Commissioning – SVolt", location: "Masvingo", category: "Home", description: "Two-man team commissioning AlfTech inverter with SVolt battery.", image: "/images/team-inverter-install.jpg" },
+  { title: "Ground-Mount Farm Array", location: "Chiredzi", category: "Farm", description: "Elevated ground-mount solar for agricultural power and pumping.", image: "/images/ground-mount-farm.jpg" },
+  { title: "Solar Pump Controller", location: "Beitbridge", category: "Farm", description: "DIFFUL pump controller with surge protection for borehole pumping.", image: "/images/pump-controller.jpg" },
+  { title: "MUST Inverter Home System", location: "Masvingo", category: "Home", description: "MUST Solar Inverter with LiFePO4 battery module.", image: "/images/must-inverter-battery.jpg" },
+  { title: "Technician – MUST Showcase", location: "Masvingo", category: "Home", description: "Technician showcasing completed MUST inverter and battery install.", image: "/images/technician-must-system.jpg" },
+  { title: "MUST System – Wall Mount", location: "Masvingo", category: "Business", description: "Professional wall-mounted MUST inverter with trunking.", image: "/images/must-inverter-wall.jpg" },
+  { title: "Commercial Corrugated Roof", location: "Masvingo", category: "Business", description: "Large solar panels on corrugated roofing for commercial property.", image: "/images/panels-corrugated-roof.jpg" },
+  { title: "Residential Backup – Compact", location: "Masvingo", category: "Home", description: "Compact MUST inverter with battery in Masvingo Province.", image: "/images/must-system-masvingo.jpg" },
+  { title: "Commercial Blue Roof Sunset", location: "Masvingo", category: "Business", description: "Solar panels on IBR sheeting with sunset across Masvingo.", image: "/images/panels-blue-roof-sunset.jpg" },
+  { title: "Dual Panel Array – Residential", location: "Masvingo", category: "Home", description: "Dual panel array on corrugated roofing with optimal alignment.", image: "/images/rooftop-panels-masvingo.jpg" },
+  { title: "MUST Inverter & DB Board", location: "Masvingo", category: "Home", description: "Complete MUST system with DB board and neat cabling.", image: "/images/must-inverter-battery-wall.jpg" },
+  { title: "Solar-Powered Home at Night", location: "Masvingo", category: "Home", description: "Bluefin-powered home lit up at night — zero load shedding.", image: "/images/home-night-solar-lights.jpg" },
+  { title: "Residential Roof Installation", location: "Masvingo", category: "Home", description: "Multiple panels being installed on corrugated residential roof.", image: "/images/rooftop-panels-residential.jpg" },
+  { title: "Bluefin Tech – Battery Setup", location: "Masvingo", category: "Business", description: "Branded Bluefin technician installing MUST inverter system.", image: "/images/technician-bluefin-install.jpg" },
+  { title: "Full System Install", location: "Masvingo", category: "Home", description: "Complete MUST inverter and battery with precision wall mount.", image: "/images/technician-must-install.jpg" },
+  { title: "Codi Energy Inverter", location: "Masvingo", category: "Business", description: "Codi Energy inverter with SVolt battery — multi-brand expertise.", image: "/images/technician-codi-inverter.jpg" },
+  { title: "Large Commercial Array", location: "Masvingo", category: "Business", description: "Major rooftop installation on metal sheeting — commercial scale.", image: "/images/panels-metal-roof-install.jpg" },
 ];
 
 export default function ProjectsPage() {
@@ -85,7 +45,7 @@ export default function ProjectsPage() {
       {/* Hero */}
       <section className="relative py-24 sm:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img src="/images/rooftop-panels-residential.jpg" alt="Solar projects portfolio" className="absolute inset-0 w-full h-full object-cover" />
+          <img src="https://images.unsplash.com/photo-1624397640148-949b1732bb0a?w=1920&q=85" alt="Solar installation portfolio" className="absolute inset-0 w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-navy/90 via-navy/85 to-navy" />
         </div>
 
