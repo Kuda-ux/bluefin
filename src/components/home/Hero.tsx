@@ -32,6 +32,21 @@ export default function Hero() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-8 items-center">
               {/* Left: Text Content */}
               <div>
+                {/* Brand Name */}
+                <motion.div
+                  initial={{ opacity: 0, x: -20 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.5, delay: 0.15 }}
+                  className="mb-4"
+                >
+                  <span className="text-2xl sm:text-3xl font-bold text-white tracking-tight">
+                    Bluefin
+                  </span>
+                  <span className="text-2xl sm:text-3xl font-light text-gold ml-2">
+                    Energy
+                  </span>
+                </motion.div>
+
                 {/* Live Badge */}
                 <motion.div
                   initial={{ opacity: 0, x: -20 }}

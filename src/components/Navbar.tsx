@@ -51,11 +51,11 @@ export default function Navbar() {
                 priority
               />
             </div>
-            <div className="hidden sm:block">
-              <span className="text-xl font-bold text-white tracking-tight">
+            <div>
+              <span className="text-lg sm:text-xl font-bold text-white tracking-tight">
                 Bluefin
               </span>
-              <span className="text-xl font-light text-gold ml-1">Energy</span>
+              <span className="text-lg sm:text-xl font-light text-gold ml-1">Energy</span>
             </div>
           </Link>
 
