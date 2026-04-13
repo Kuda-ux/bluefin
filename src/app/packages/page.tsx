@@ -23,7 +23,7 @@ const packages = [
       "Mounting kit & protection",
     ],
     popular: false,
-    image: "/images/must-system-masvingo.jpg",
+    image: "/images/must-inverter-wall.jpg",
   },
   {
     name: "Family Backup System",

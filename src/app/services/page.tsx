@@ -14,7 +14,7 @@ const services = [
       "System testing & commissioning",
       "Documentation & warranties",
     ],
-    image: "/images/rooftop-panels-masvingo.jpg",
+    image: "/images/rooftop-panels-residential.jpg",
     accent: "gold",
   },
   {
@@ -29,7 +29,7 @@ const services = [
       "Protection systems & breakers",
       "Cables & connectors",
     ],
-    image: "/images/inverter-batteries-kodak.jpg",
+    image: "/images/must-inverter-battery-wall.jpg",
     accent: "blue-electric",
   },
   {
@@ -44,7 +44,7 @@ const services = [
       "Remote monitoring",
       "24/7 support availability",
     ],
-    image: "/images/must-inverter-battery.jpg",
+    image: "/images/technician-must-install.jpg",
     accent: "blue-bright",
   },
   {
@@ -59,7 +59,7 @@ const services = [
       "Water storage management",
       "Agricultural consulting",
     ],
-    image: "/images/ground-mount-farm.jpg",
+    image: "/images/panels-metal-roof-install.jpg",
     accent: "green-400",
   },
   {
@@ -74,7 +74,7 @@ const services = [
       "Wiring inspections",
       "System upgrades & expansion",
     ],
-    image: "/images/technician-bluefin-install.jpg",
+    image: "/images/technician-inverter.jpg",
     accent: "gold",
   },
 ];

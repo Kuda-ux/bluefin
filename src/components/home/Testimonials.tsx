@@ -10,6 +10,7 @@ const testimonials = [
     quote:
       "Bluefin transformed our home. We haven't experienced a single power cut since the installation. The team was professional, punctual, and the system works flawlessly. Best investment we've made.",
     rating: 5,
+    system: "Family Backup System",
   },
   {
     name: "Grace Mutasa",
@@ -17,6 +18,7 @@ const testimonials = [
     quote:
       "Our lodge now runs entirely on solar. Guests love it, and our electricity costs have dropped by over 80%. Bluefin's team designed a system perfectly tailored to our needs.",
     rating: 5,
+    system: "Business Power System",
   },
   {
     name: "Tatenda Chirwa",
@@ -24,6 +26,7 @@ const testimonials = [
     quote:
       "The solar irrigation system has been a game-changer for our farm. Reliable water supply regardless of ZESA power cuts. Production has increased significantly since installation.",
     rating: 5,
+    system: "Solar Irrigation System",
   },
   {
     name: "Rumbidzai Ndlovu",
@@ -31,6 +34,7 @@ const testimonials = [
     quote:
       "My shop used to lose thousands during power cuts. Since Bluefin installed our backup system, we've had zero downtime. The POS and fridges run perfectly all day. Highly recommend!",
     rating: 5,
+    system: "Business Backup System",
   },
 ];
 
@@ -71,14 +75,19 @@ export default function Testimonials() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="p-8 rounded-2xl glass-light border border-white/5 hover:border-white/10 transition-all duration-500 group"
+              className="relative p-8 rounded-2xl glass-light border border-white/5 hover:border-gold/20 transition-all duration-500 group hover:-translate-y-1"
             >
+              {/* Large Quote Icon */}
+              <svg className="absolute top-6 right-6 w-10 h-10 text-gold/10 group-hover:text-gold/20 transition-colors duration-500" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10H14.017zM0 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151C7.546 6.068 5.983 8.789 5.983 11h4v10H0z" />
+              </svg>
+
               {/* Stars */}
-              <div className="flex gap-1 mb-5">
+              <div className="flex gap-1 mb-4">
                 {Array.from({ length: testimonial.rating }).map((_, j) => (
                   <svg
                     key={j}
-                    className="w-5 h-5 text-gold"
+                    className="w-4 h-4 text-gold"
                     fill="currentColor"
                     viewBox="0 0 20 20"
                   >
@@ -92,15 +101,20 @@ export default function Testimonials() {
                 &ldquo;{testimonial.quote}&rdquo;
               </p>
 
-              {/* Author */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue to-gold flex items-center justify-center text-white font-bold text-lg">
-                  {testimonial.name.charAt(0)}
+              {/* Author + System Badge */}
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-full bg-gradient-to-br from-blue to-gold flex items-center justify-center text-white font-bold text-sm">
+                    {testimonial.name.charAt(0)}
+                  </div>
+                  <div>
+                    <p className="text-white font-semibold text-sm">{testimonial.name}</p>
+                    <p className="text-gray-500 text-xs">{testimonial.role}</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="text-white font-semibold">{testimonial.name}</p>
-                  <p className="text-gray-500 text-sm">{testimonial.role}</p>
-                </div>
+                <span className="hidden sm:inline-block px-3 py-1 text-[10px] font-semibold uppercase tracking-wider text-gold/70 bg-gold/5 rounded-full border border-gold/10">
+                  {testimonial.system}
+                </span>
               </div>
             </motion.div>
           ))}

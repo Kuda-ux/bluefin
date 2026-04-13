@@ -7,37 +7,37 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Residential Installation",
+    title: "Residential Rooftop",
     location: "Masvingo",
     category: "Home",
     image: "/images/rooftop-panels-city.jpg",
   },
   {
-    title: "Commercial Solar System",
-    location: "Harare",
+    title: "Commercial Installation",
+    location: "Masvingo",
     category: "Business",
-    image: "/images/panels-blue-roof-sunset.jpg",
+    image: "/images/panels-corrugated-roof.jpg",
   },
   {
-    title: "Farm Solar Pumping",
+    title: "Borehole Solar Pumping",
     location: "Chiredzi",
     category: "Farm",
     image: "/images/ground-mount-farm.jpg",
   },
   {
-    title: "Backup Power System",
+    title: "MUST Inverter & Battery",
     location: "Masvingo",
     category: "Business",
-    image: "/images/inverter-batteries-kodak.jpg",
+    image: "/images/technician-dual-must-system.jpg",
   },
   {
-    title: "Home Solar System",
-    location: "Mutare",
+    title: "Township Solar System",
+    location: "Masvingo",
     category: "Home",
-    image: "/images/rooftop-panels-mountain.jpg",
+    image: "/images/rooftop-panels-town.jpg",
   },
   {
-    title: "Solar Water Pumping",
+    title: "Solar Pump Controller",
     location: "Beitbridge",
     category: "Farm",
     image: "/images/pump-controller.jpg",

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const showcaseImages = [
-  { src: "/images/rooftop-panels-city.jpg", label: "Residential" },
-  { src: "/images/technician-inverter.jpg", label: "Installation" },
+  { src: "/images/rooftop-panels-mountain.jpg", label: "Residential" },
+  { src: "/images/technician-dyness-branded.jpg", label: "Installation" },
+  { src: "/images/alftech-svolt-batteries.jpg", label: "Backup Power" },
   { src: "/images/panels-blue-roof-sunset.jpg", label: "Commercial" },
-  { src: "/images/inverter-batteries-kodak.jpg", label: "Backup Power" },
 ];
 
 export default function Hero() {

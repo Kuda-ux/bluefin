@@ -85,9 +85,14 @@ export default function Stats() {
 
   return (
     <section ref={ref} className="relative py-20 sm:py-28 overflow-hidden">
-      {/* Background */}
+      {/* Background with real image */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-medium via-navy-light to-navy-medium" />
+        <img
+          src="/images/panels-blue-roof-sunset.jpg"
+          alt=""
+          className="absolute inset-0 w-full h-full object-cover"
+        />
+        <div className="absolute inset-0 bg-navy/90 backdrop-blur-sm" />
         <div className="absolute inset-0 opacity-[0.03]" style={{
           backgroundImage: "radial-gradient(circle at 1px 1px, rgba(255,255,255,0.3) 1px, transparent 0)",
           backgroundSize: "40px 40px",
@@ -95,7 +100,7 @@ export default function Stats() {
       </div>
 
       {/* Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-blue/5 rounded-full blur-[120px]" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[300px] bg-gold/5 rounded-full blur-[120px]" />
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">

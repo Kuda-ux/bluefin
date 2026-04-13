@@ -131,7 +131,7 @@ export default function AboutPage() {
               className="relative"
             >
               <div className="relative aspect-[4/3] rounded-2xl overflow-hidden">
-                <img src="/images/team-inverter-install.jpg" alt="Bluefin Energy team at work" className="absolute inset-0 w-full h-full object-cover" />
+                <img src="/images/team-wiring.jpg" alt="Bluefin Energy team at work" className="absolute inset-0 w-full h-full object-cover" />
               </div>
               <div className="absolute -bottom-6 -left-6 p-6 glass rounded-2xl">
                 <div className="text-3xl font-bold text-gold mb-1">500+</div>
