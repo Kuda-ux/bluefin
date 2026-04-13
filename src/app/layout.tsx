@@ -12,11 +12,29 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bluefin Energy | Solar Installation & Solutions in Zimbabwe",
+  metadataBase: new URL("https://www.bluefin.co.zw"),
+  title: {
+    default: "Bluefin Energy | Solar Installation & Solutions in Zimbabwe",
+    template: "%s | Bluefin Energy Zimbabwe",
+  },
   description:
     "Zimbabwe's trusted solar energy company. Professional solar system design, installation, panels, inverters & batteries. Serving Masvingo & nationwide. Get a free quote today.",
   keywords:
-    "solar systems Zimbabwe, solar installation Masvingo, backup power Zimbabwe, solar panels Zimbabwe, solar energy Zimbabwe, solar inverters, solar batteries, irrigation solar systems",
+    "solar systems Zimbabwe, solar installation Masvingo, backup power Zimbabwe, solar panels Zimbabwe, solar energy Zimbabwe, solar inverters, solar batteries, irrigation solar systems, load shedding solutions Zimbabwe, Bluefin Energy",
+  authors: [{ name: "Bluefin Energy", url: "https://www.bluefin.co.zw" }],
+  creator: "Bluefin Energy",
+  publisher: "Bluefin Energy",
+  alternates: {
+    canonical: "https://www.bluefin.co.zw",
+  },
+  icons: {
+    icon: [
+      { url: "/icon.jpg", type: "image/jpeg" },
+      { url: "/logo.jpeg", type: "image/jpeg", sizes: "192x192" },
+    ],
+    apple: [{ url: "/logo.jpeg", sizes: "180x180", type: "image/jpeg" }],
+    shortcut: "/icon.jpg",
+  },
   openGraph: {
     title: "Bluefin Energy | Solar Installation & Solutions in Zimbabwe",
     description:
@@ -25,17 +43,34 @@ export const metadata: Metadata = {
     siteName: "Bluefin Energy",
     locale: "en_ZW",
     type: "website",
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 512,
+        height: 512,
+        alt: "Bluefin Energy - Solar Solutions Zimbabwe",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bluefin Energy | Solar Installation & Solutions in Zimbabwe",
     description:
       "Say goodbye to power cuts. Professional solar solutions for homes, businesses & farms across Zimbabwe.",
+    images: ["/logo.jpeg"],
   },
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
+  verification: {},
 };
 
 export default function RootLayout({

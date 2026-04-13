@@ -115,7 +115,7 @@ export default function ServicesPage() {
       {/* Services Detail */}
       <section className="py-16 sm:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-32">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
             {services.map((service, i) => (
               <motion.div
                 key={service.title}

@@ -50,7 +50,7 @@ export default function FinalCTA() {
               href="https://wa.me/263776033323?text=Hi%2C%20I%20need%20a%20solar%20system%20quote"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-3 px-10 py-5 bg-gradient-to-r from-gold to-gold-dark text-navy font-bold text-lg rounded-2xl hover:shadow-2xl hover:shadow-gold/30 hover:scale-[1.02] transition-all duration-300"
+              className="group flex items-center justify-center gap-3 px-8 sm:px-10 py-4 sm:py-5 bg-gradient-to-r from-gold to-gold-dark text-navy font-bold text-base sm:text-lg rounded-2xl hover:shadow-2xl hover:shadow-gold/30 hover:scale-[1.02] transition-all duration-300 w-full sm:w-auto"
             >
               <svg
                 className="w-6 h-6"
@@ -76,7 +76,7 @@ export default function FinalCTA() {
             </a>
             <a
               href="tel:+263776033323"
-              className="group flex items-center gap-3 px-10 py-5 glass rounded-2xl text-white font-semibold text-lg hover:bg-white/10 transition-all duration-300 gradient-border"
+              className="group flex items-center justify-center gap-3 px-8 sm:px-10 py-4 sm:py-5 glass rounded-2xl text-white font-semibold text-base sm:text-lg hover:bg-white/10 transition-all duration-300 gradient-border w-full sm:w-auto"
             >
               <svg
                 className="w-5 h-5 text-gold"

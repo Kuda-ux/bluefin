@@ -103,7 +103,7 @@ export default function WhyChoose() {
               </div>
             </div>
             {/* Floating badge */}
-            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-6 py-3 glass rounded-2xl flex items-center gap-3 shadow-xl">
+            <div className="absolute -bottom-4 left-1/2 -translate-x-1/2 px-4 sm:px-6 py-3 glass rounded-2xl flex items-center gap-3 shadow-xl whitespace-nowrap">
               <div className="w-10 h-10 rounded-full bg-gradient-to-br from-gold to-gold-dark flex items-center justify-center">
                 <svg className="w-5 h-5 text-navy" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
